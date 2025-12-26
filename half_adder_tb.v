@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 17.06.2025 17:23:19
+// Create Date: 19.06.2025 16:32:15
 // Design Name: 
-// Module Name: andgate
+// Module Name: half_adder_tb
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,8 +20,15 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module andgate(y,a,b);
-input a,b;
-output y;
-and m1(y,a,b);
+module half_adder_tb;
+reg A,B;
+wire Sum, Carry;
+half_adder uut (A,B,Sum,Carry);
+initial begin
+A=0;B=0;
+#10 A=0;B=1;
+#10 A=1;B=0;
+#10 A=1;B=1;
+#20 $finish;
+end
 endmodule

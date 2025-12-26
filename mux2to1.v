@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 17.06.2025 17:23:19
+// Create Date: 19.06.2025 15:35:15
 // Design Name: 
-// Module Name: andgate
+// Module Name: mux2to1
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,8 +20,9 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module andgate(y,a,b);
-input a,b;
-output y;
-and m1(y,a,b);
+module mux2to1(in,sel,out);
+input[1:0]in;
+input sel;
+output out;
+assign out=in[sel];
 endmodule
