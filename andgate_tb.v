@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 17.06.2025 16:43:07
+// Create Date: 17.06.2025 16:48:03
 // Design Name: 
-// Module Name: andgate
+// Module Name: andgate_tb
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,8 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module andgate(y,a,b);
-input a,b;
-output y;
-and m1(y,a,b);
+module andgate_tb(
+
+    );
 endmodule
